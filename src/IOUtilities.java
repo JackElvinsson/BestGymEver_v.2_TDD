@@ -83,7 +83,7 @@ public class IOUtilities {
         boolean newFile = !Files.exists(writeToFilePath);
 
 //TODO-------------------------------------------SKRIVER TILL FIL-------------------------------------------------------
-
+        // TRY-WITH-RESOURCES
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename, true))) {
 
             if(newFile) {
