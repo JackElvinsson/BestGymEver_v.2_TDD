@@ -44,6 +44,7 @@ class IOUtilitiesTest {
     void printToFileTest() {
 
         int counter = 0;
+
         while (counter < 10) {
             GymMember testMember = testList.get(randomNumberGenerator());
             if (testMember.isActiveMember(true)) {
@@ -54,13 +55,14 @@ class IOUtilitiesTest {
             }
             counter ++;
         }
-
     }
 
     int randomNumberGenerator() {
-        Random r = new Random();
+
+        Random random = new Random();
         int low = 0;
         int high = 13;
-        return r.nextInt(high - low) + low;
+
+        return random.nextInt(high - low) + low;
     }
 }

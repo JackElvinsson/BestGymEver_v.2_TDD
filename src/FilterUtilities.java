@@ -57,6 +57,9 @@ public class FilterUtilities{
         return filteredList;
     }
 
+
+
+
     public boolean isObjectInList(List<GymMember> gymMemberList, String input) {
 
         String trimmedInput = input.trim().toLowerCase();
@@ -119,6 +122,9 @@ public class FilterUtilities{
         return nameFound;
     }
 
+
+
+
     public boolean isNameValid(String input) {
 
         boolean isValid = true;
@@ -130,6 +136,9 @@ public class FilterUtilities{
         }
         return isValid;
     }
+
+
+    
 
     public boolean isPersonNumberValid(String input) {
         boolean isValid = true;

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
-//--------------------------------------------------BEST GYM EVER-------------------------------------------------------
+//-------------------------------------------------BEST GYM EVER--------------------------------------------------------
 
 public class Main {
 
@@ -37,9 +37,11 @@ public class Main {
 
                 String input = scanner.nextLine().toLowerCase().trim();
 
+                // Exit command
                 if (input.equals("exit")){
                     System.exit(0);
                 }
+
 
                 if (filterUtilities.isObjectInList(gymMemberList, input)) {
                     filteredList = filterUtilities.addMemberToNewList(gymMemberList, input);
@@ -51,6 +53,7 @@ public class Main {
 
 //TODO---------------------------------------------FELHANTERING---------------------------------------------------------
 
+                // Catch eller else? Båda fungerar
             }catch (IndexOutOfBoundsException e) {
                 System.out.println("You are in the list but you do not have an active membership\n");
             }

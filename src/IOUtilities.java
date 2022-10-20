@@ -13,6 +13,8 @@ import java.util.Scanner;
 public class IOUtilities {
 
 
+
+
     public List<GymMember> readFromFileToList(Path inDataPath) {
 
         List<GymMember> gymMemberList = new ArrayList<>();
@@ -58,10 +60,15 @@ public class IOUtilities {
         return gymMemberList;
     }
 
+
+
+
     public void printTofile(GymMember gymMember, LocalDate date, boolean test) {
 
         String filename = "src/" + gymMember.getPersonNumber() + ".txt";
         Path writeToFilePath = Paths.get(filename);
+
+//---------------------------------------------IF TEST IS RUNNING-------------------------------------------------------
 
         //Test variables
         String filenameTest = "src/" + gymMember.getPersonNumber() + "_test.txt";
@@ -71,6 +78,7 @@ public class IOUtilities {
             filename = filenameTest;
             writeToFilePath = writeToTestPath;
         }
+//----------------------------------------------------------------------------------------------------------------------
 
         boolean newFile = !Files.exists(writeToFilePath);
 

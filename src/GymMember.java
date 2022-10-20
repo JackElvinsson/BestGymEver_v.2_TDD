@@ -34,7 +34,8 @@ public class GymMember {
         return personNumber + ", " + fullName;
     }
 
-    //TODO----------------------------------------LÄSER IN OCH PARSAR DATUM-------------------------------------------------
+//TODO----------------------------------------LÄSER IN OCH PARSAR DATUM-------------------------------------------------
+
     public boolean isActiveMember(boolean test) {
 
         if (test) {
