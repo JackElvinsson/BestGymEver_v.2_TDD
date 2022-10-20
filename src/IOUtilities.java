@@ -103,42 +103,4 @@ public class IOUtilities {
             e.printStackTrace();
         }
     }
-
-    // TEST PRINTER
-//    public void printToFileTest (GymMember gymMember) {
-//
-//        String testFileName = "src/" + gymMember.getPersonNumber() + "_test.txt";
-//        Path testFilePath = Paths.get(testFileName);
-//        LocalDate testDate = LocalDate.of(2022, 10, 17);
-//        boolean newTestFile = !Files.exists(testFilePath);
-//
-////---------------------------------------------------PRINTER------------------------------------------------------------
-//
-//        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(testFileName))) {
-//
-//            if (newTestFile) {
-//                bufferedWriter.write(gymMember.gymMemberToString() + "\n"
-//                        + testDate + "\n");
-//
-//            } else
-//                bufferedWriter.write(testDate + "\n");
-//
-////TODO---------------------------------------------FELHANTERING---------------------------------------------------------
-//
-//        } catch (
-//                FileNotFoundException e) {
-//            System.out.println("File not found");
-//            e.printStackTrace();
-//
-//        } catch (
-//                IOException e) {
-//            System.out.println("Could not write to file");
-//            e.printStackTrace();
-//
-//        } catch (
-//                Exception e) {
-//            System.out.println("Oops! Something went wrong");
-//            e.printStackTrace();
-//        }
-//    }
 }
